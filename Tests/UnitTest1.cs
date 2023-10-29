@@ -1,3 +1,6 @@
+using Models;
+using Newtonsoft.Json.Schema;
+
 namespace Tests
 {
     public class Tests
@@ -10,7 +13,7 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            SchemaValidation.ValidatePostcodeSchema();
         }
     }
 }
